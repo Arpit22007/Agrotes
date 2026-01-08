@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers & Buyers Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="work.js"></script>
+    <header>
+        <h1>બજાર ભાવ</h1>
+        <nav>
+            <button id="farmer-btn">હું ખેડૂત છું</button>
+            <button id="buyer-btn">હું વેપારી છું</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="search-section">
+            <h2>ઉત્પાદન શોધો</h2>
+            <input type="text" id="search-bar" placeholder="Search for fruits, vegetables, etc.">
+            <button id="search-btn">Search</button>
+        </section>
+        
+        <section id="products-section">
+            <h2>Available Products</h2>
+            <div id="product-list">
+                <!-- Products will be added here dynamically -->
+            </div>
+        </section>
+        
+        <section id="add-product-section" style="display: none;">
+            <h2>Add Your Product</h2>
+            <form id="add-product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="product-price">Price per kg:</label>
+                <input type="number" id="product-price" required>
+                
+                <label for="product-quantity">Quantity (kg):</label>
+                <input type="number" id="product-quantity" required>
+                
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at support@farmmarket.com</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
