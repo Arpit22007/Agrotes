@@ -19,18 +19,16 @@
     </header>
     
     <main>
-        <section id="search-section">
-            <h2>ઉત્પાદન શોધો</h2>
-            <input type="text" id="search-bar" placeholder="Search for fruits, vegetables, etc.">
-            <button id="search-btn">Search</button>
-        </section>
-        
-        <section id="products-section">
-            <h2>Available Products</h2>
-            <div id="product-list">
-                <!-- Products will be added here dynamically -->
-            </div>
-        </section>
+        <label id = "farmer-stuff",style = "display:none;"><h3> ઉત્પાદન પસંદ કરો: </h3></label>
+        <select id="product-category", style="height: 50px; width: 100px; display: none;">
+                <option value="">-- પસંદ કરો --</option>
+                <option value="fruits">ફળો</option>
+                <option value="vegetables">શાકભાજી</option>
+                <option value="grains">ધાન્ય</option>
+                <option value="dairy">ડેરી</option>
+        </select>
+
+
         
         <section id="add-product-section" style="display: none;">
             <h2>Add Your Product</h2>
