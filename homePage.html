@@ -19,32 +19,24 @@
     </header>
     
     <main>
-        <label id = "farmer-stuff",style = "display:none;"><h3> ઉત્પાદન પસંદ કરો: </h3></label>
-        <select id="product-category", style="height: 50px; width: 100px; display: none;">
-                <option value="">-- પસંદ કરો --</option>
-                <option value="fruits">ફળો</option>
-                <option value="vegetables">શાકભાજી</option>
-                <option value="grains">ધાન્ય</option>
-                <option value="dairy">ડેરી</option>
+        <label id = "farmer-stuff" style="display: none;"><h3> ઉત્પાદન પસંદ કરો: </h3></label>
+        <select id="product-category", style="height: 50px; width: 300px; display: none;", required>
+                <option value="", disabled="name", selected="true">-- પસંદ કરો --</option>
+                <option value="Cereals" ,id="selected-product">અનાજ પાક</option>
+                <option value="Oilseeds" , id="selected-product">તેલબીજ પાક</option>
+                <option value="Pulses" , id="selected-product">કઠોળ / દાળ પાક</option>
+                <option value="Vegetables" , id="selected-product">શાકભાજી પાક</option>
+                <option value="Spices" , id="selected-product">મસાલા પાક</option>
+                <option value="Fruits" , id="selected-product">ફળ પાક</option>
+                <option value="Cash Crops" , id="selected-product">નગદ પાક / ઉદ્યોગ પાક</option>
+                <option value="Fodder Crops", id="selected-product">ચારો</option>
         </select>
 
+        <br><br>
+        <label id="selected-category-label" style="display: none;">પસંદ કરો:</label>
+        <select name="" id="selected-category", style="display: none; height: 30px; width: 150px;">
 
-        
-        <section id="add-product-section" style="display: none;">
-            <h2>Add Your Product</h2>
-            <form id="add-product-form">
-                <label for="product-name">Product Name:</label>
-                <input type="text" id="product-name" required>
-                
-                <label for="product-price">Price per kg:</label>
-                <input type="number" id="product-price" required>
-                
-                <label for="product-quantity">Quantity (kg):</label>
-                <input type="number" id="product-quantity" required>
-                
-                <button type="submit">Add Product</button>
-            </form>
-        </section>
+        </select>
     </main>
     
     <footer>
