@@ -11,6 +11,7 @@
 <body>
     <script src="work.js"></script>
     <header>
+        <img src="Agrotes logo.png" alt="Logo" style="display: flex; height: 140px; width: 140px; justify-self:center;">
         <h1>બજાર ભાવ</h1>
         <nav>
             <button id="farmer-btn">હું ખેડૂત છું</button>
@@ -22,21 +23,24 @@
         <label id = "farmer-stuff" style="display: none;"><h3> ઉત્પાદન પસંદ કરો: </h3></label>
         <select id="product-category", style="height: 50px; width: 300px; display: none;", required>
                 <option value="", disabled="name", selected="true">-- પસંદ કરો --</option>
-                <option value="Cereals" ,id="selected-product">અનાજ પાક</option>
-                <option value="Oilseeds" , id="selected-product">તેલબીજ પાક</option>
-                <option value="Pulses" , id="selected-product">કઠોળ / દાળ પાક</option>
-                <option value="Vegetables" , id="selected-product">શાકભાજી પાક</option>
-                <option value="Spices" , id="selected-product">મસાલા પાક</option>
-                <option value="Fruits" , id="selected-product">ફળ પાક</option>
-                <option value="Cash Crops" , id="selected-product">નગદ પાક / ઉદ્યોગ પાક</option>
+                <option value="Cereals" ,id="selected-product">અનાજ</option>
+                <option value="Oilseeds" , id="selected-product">તેલબીજ</option>
+                <option value="Pulses" , id="selected-product">કઠોળ</option>
+                <option value="Vegetables" , id="selected-product">શાકભાજી</option>
+                <option value="Spices" , id="selected-product">મસાલા</option>
+                <option value="Fruits" , id="selected-product">ફળ</option>
                 <option value="Fodder Crops", id="selected-product">ચારો</option>
         </select>
 
         <br><br>
         <label id="selected-category-label" style="display: none;">પસંદ કરો:</label>
         <select name="" id="selected-category", style="display: none; height: 30px; width: 150px;">
-
         </select>
+
+        <br><br>
+
+        <input type="button" value="Submit" id="submit-btn" style="height:40px; width:100px; display: none;">
+    
     </main>
     
     <footer>
