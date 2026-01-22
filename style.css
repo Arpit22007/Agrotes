@@ -87,3 +87,24 @@ footer {
     background-color: #333;
     color: white;
 }
+
+/* Custom Green Palette */
+header { background-color: #2e7d32; padding: 30px; }
+h1 { margin-top: 10px; font-weight: bold; }
+
+.main-logo { height: 120px; width: 120px; display: block; margin: 0 auto; }
+
+main { max-width: 900px; margin: 20px auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+/* Selection elements */
+.main-select, .sub-select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; }
+
+.submit-btn { width: 100%; background: #2e7d32; color: white; padding: 15px; border: none; cursor: pointer; border-radius: 8px; font-size: 18px; transition: 0.3s; }
+.submit-btn:hover { background: #1b5e20; }
+
+/* Table Styling */
+.table-container { overflow-x: auto; margin-top: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th { background-color: #f1f8e9; color: #2e7d32; text-align: left; padding: 15px; border-bottom: 2px solid #2e7d32; }
+td { padding: 12px; border-bottom: 1px solid #eee; }
+tr:hover { background-color: #f9f9f9; }

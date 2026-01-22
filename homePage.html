@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gu">
 <head>
-    <link rel="stylesheet" href="style.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmers & Buyers Marketplace</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Farmers Marketplace - Bajar Bhav</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="work.js"></script>
     <header>
-        <img src="Agrotes logo.png" alt="Logo" style="display: flex; height: 140px; width: 140px; justify-self:center;">
+        <img src="Agrotes logo.png" alt="Logo" class="main-logo">
         <h1>બજાર ભાવ</h1>
         <nav>
             <button id="farmer-btn">હું ખેડૂત છું</button>
@@ -20,33 +17,43 @@
     </header>
     
     <main>
-        <label id = "farmer-stuff" style="display: none;"><h3> ઉત્પાદન પસંદ કરો: </h3></label>
-        <select id="product-category", style="height: 50px; width: 300px; display: none;", required>
-                <option value="", disabled="name", selected="true">-- પસંદ કરો --</option>
-                <option value="Cereals" ,id="selected-product">અનાજ</option>
-                <option value="Oilseeds" , id="selected-product">તેલબીજ</option>
-                <option value="Pulses" , id="selected-product">કઠોળ</option>
-                <option value="Vegetables" , id="selected-product">શાકભાજી</option>
-                <option value="Spices" , id="selected-product">મસાલા</option>
-                <option value="Fruits" , id="selected-product">ફળ</option>
-                <option value="Fodder Crops", id="selected-product">ચારો</option>
-        </select>
+        <div class="selection-box">
+            <label id="farmer-stuff" style="display: none;"><h3>ઉત્પાદન પસંદ કરો:</h3></label>
+            <select id="product-category" class="main-select" style="display: none;" required>
+                <option value="" disabled selected>-- શ્રેણી પસંદ કરો --</option>
+                <option value="Cereals">અનાજ</option>
+                <option value="Oilseeds">તેલબીજ</option>
+                <option value="Pulses">કઠોળ</option>
+                <option value="Vegetables">શાકભાજી</option>
+                <option value="Spices">મસાલા</option>
+                <option value="Fruits">ફળ</option>
+            </select>
 
-        <br><br>
-        <label id="selected-category-label" style="display: none;">પસંદ કરો:</label>
-        <select name="" id="selected-category", style="display: none; height: 30px; width: 150px;">
-        </select>
+            <label id="selected-category-label" style="display: none;">પાક પસંદ કરો:</label>
+            <select id="selected-category" class="sub-select" style="display: none;"></select>
 
-        <br><br>
+            <button id="submit-btn" class="submit-btn" style="display: none;">ભાવ તપાસો</button>
+        </div>
 
-        <input type="button" value="Submit" id="submit-btn" style="height:40px; width:100px; display: none;">
-    
+        <section id="price-results" class="price-section" style="display: none;">
+            <h2>આજના તાજા ભાવ (ગુજરાત)</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>માર્કેટ યાર્ડ</th>
+                            <th>ઓછામાં ઓછો</th>
+                            <th>વધારેમાં વધારે</th>
+                            <th>સરેરાશ ભાવ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="price-body"></tbody>
+                </table>
+            </div>
+        </section>
     </main>
-    
-    <footer>
-        <p>Contact us at support@farmmarket.com</p>
-    </footer>
-    
-    <script src="script.js"></script>
+
+    <footer><p>Contact us at support@farmmarket.com</p></footer>
+    <script src="work.js"></script>
 </body>
 </html>
